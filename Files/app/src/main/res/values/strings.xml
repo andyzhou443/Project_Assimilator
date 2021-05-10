@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AudioEquilizer</string>
+    <string name="audio_equlizer">Audio Equlizer</string>
+    <string name="_19_2k">19.2k</string>
+    <string name="_49_6k">49.6k</string>
+    <string name="_4_8k">4.8k</string>
+    <string name="_2_4k">2.4k</string>
+    <string name="_1_2k">1.2k</string>
+    <string name="_600">600</string>
+    <string name="_300">300</string>
+    <string name="_150">150</string>
+    <string name="_75">75</string>
+</resources>
