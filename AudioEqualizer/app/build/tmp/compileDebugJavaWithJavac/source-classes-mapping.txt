@@ -1,0 +1,4 @@
+com/example/audioequalizer/BuildConfig.java
+ com.example.audioequalizer.BuildConfig
+com/example/audioequalizer/MainActivity.java
+ com.example.audioequalizer.MainActivity
