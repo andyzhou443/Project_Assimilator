@@ -84,6 +84,7 @@
                         android:textAlignment="gravity"
                         android:importantForAutofill="no"
                         android:inputType="number"
+                        android:hint="@string/_0"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -141,6 +142,7 @@
                         android:textAlignment="gravity"
                         android:importantForAutofill="no"
                         android:inputType="number"
+                        android:hint="@string/_0"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -198,6 +200,7 @@
                         android:textAlignment="gravity"
                         android:importantForAutofill="no"
                         android:inputType="number"
+                        android:hint="@string/_0"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -255,6 +258,7 @@
                         android:textAlignment="gravity"
                         android:importantForAutofill="no"
                         android:inputType="number"
+                        android:hint="@string/_0"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -309,6 +313,7 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:importantForAutofill="no"
+                        android:hint="@string/_0"
                         android:inputType="number"
                         android:gravity="center"
                         android:textAlignment="gravity"
@@ -366,6 +371,7 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:importantForAutofill="no"
+                        android:hint="@string/_0"
                         android:inputType="number"
                         android:gravity="center"
                         android:textAlignment="gravity"
@@ -424,6 +430,7 @@
                         android:ems="10"
                         android:gravity="center"
                         android:textAlignment="gravity"
+                        android:hint="@string/_0"
                         android:importantForAutofill="no"
                         android:inputType="number"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -482,6 +489,7 @@
                         android:gravity="center"
                         android:textAlignment="gravity"
                         android:importantForAutofill="no"
+                        android:hint="@string/_0"
                         android:inputType="number"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -539,6 +547,7 @@
                         android:textAlignment="gravity"
                         android:importantForAutofill="no"
                         android:inputType="number"
+                        android:hint="@string/_0"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
