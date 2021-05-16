@@ -2,3 +2,13 @@ com/example/audioequalizer/BuildConfig.java
  com.example.audioequalizer.BuildConfig
 com/example/audioequalizer/MainActivity.java
  com.example.audioequalizer.MainActivity
+ com.example.audioequalizer.MainActivity$1
+ com.example.audioequalizer.MainActivity$10
+ com.example.audioequalizer.MainActivity$2
+ com.example.audioequalizer.MainActivity$3
+ com.example.audioequalizer.MainActivity$4
+ com.example.audioequalizer.MainActivity$5
+ com.example.audioequalizer.MainActivity$6
+ com.example.audioequalizer.MainActivity$7
+ com.example.audioequalizer.MainActivity$8
+ com.example.audioequalizer.MainActivity$9

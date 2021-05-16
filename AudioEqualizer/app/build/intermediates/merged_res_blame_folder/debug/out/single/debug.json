@@ -76,6 +76,10 @@
         "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_activity_main.xml.flat",
+        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\src\\main\\res\\layout-v26\\activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
