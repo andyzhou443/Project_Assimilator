@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     float start_pos=0;
     int start_position=0;
 
+
+
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnReset:
@@ -56,20 +58,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this, "Equalizer settings reset to 0", Toast.LENGTH_SHORT).show();
                 super.onPause();
                 break;
-
-            case R.id.editTextNumber63:
-
-
-                break;
-            case R.id.editTextNumber125:
-
-                break;
-
-
             default:
                 break;
         }
     }
+
+    public void startService (View V){ //foreground service
+
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +83,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editTextNumber4k = findViewById(R.id.editTextNumber4k);
         editTextNumber8k = findViewById(R.id.editTextNumber8k);
         editTextNumber16k = findViewById(R.id.editTextNumber16k);
+        editTextNumber63.setText(String.valueOf(0));
+        editTextNumber125.setText(String.valueOf(0));
+        editTextNumber250.setText(String.valueOf(0));
+        editTextNumber500.setText(String.valueOf(0));
+        editTextNumber1k.setText(String.valueOf(0));
+        editTextNumber2k.setText(String.valueOf(0));
+        editTextNumber4k.setText(String.valueOf(0));
+        editTextNumber8k.setText(String.valueOf(0));
+        editTextNumber16k.setText(String.valueOf(0));
+
         seekBar63 = (SeekBar)findViewById(R.id.seekBar63);
         seekBar125 = (SeekBar)findViewById(R.id.seekBar125);
         seekBar250 = (SeekBar)findViewById(R.id.seekBar250);
@@ -96,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         seekBar8k = (SeekBar)findViewById(R.id.seekBar8k);
         seekBar16k = (SeekBar)findViewById(R.id.seekBar16k);
         Switch switchOnOff = (Switch)findViewById(R.id.switchOnOff);
-
+        switchOnOff.setChecked(!switchOnOff.isSelected());
 
         Button btnReset = findViewById(R.id.btnReset);//initialize
         btnReset.setOnClickListener(this); // used for the toast message
@@ -122,6 +129,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     seekBar4k.setEnabled(true);
                     seekBar8k.setEnabled(true);
                     seekBar16k.setEnabled(true);
+                    equalizer.setEnabled(true);
                 }
                 else{
                     seekBar63.setEnabled(false);
@@ -134,6 +142,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     seekBar8k.setEnabled(false);
                     seekBar16k.setEnabled(false);
                     btnReset.setEnabled(false);
+                    equalizer.setEnabled(false);
                 }
 
             }

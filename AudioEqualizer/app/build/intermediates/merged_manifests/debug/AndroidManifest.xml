@@ -9,6 +9,7 @@
         android:targetSdkVersion="30" />
 
     <application
+        android:name="com.example.audioequalizer.App"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"

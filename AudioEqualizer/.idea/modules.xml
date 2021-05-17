@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Audio_Equalizer.iml" filepath="$PROJECT_DIR$/.idea/modules/Audio_Equalizer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Audio_Equalizer.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Audio_Equalizer.app.iml" />
-    </modules>
-  </component>
-</project>

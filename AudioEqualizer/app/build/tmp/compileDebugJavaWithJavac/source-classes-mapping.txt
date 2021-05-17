@@ -12,3 +12,5 @@ com/example/audioequalizer/MainActivity.java
  com.example.audioequalizer.MainActivity$7
  com.example.audioequalizer.MainActivity$8
  com.example.audioequalizer.MainActivity$9
+com/example/audioequalizer/App.java
+ com.example.audioequalizer.App
