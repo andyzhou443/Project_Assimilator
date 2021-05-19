@@ -133,7 +133,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         start_pos=0;
         seekBar63.setProgress(start_position);
         editTextNumber63.setText(String.valueOf(start_pos));
+
     */
+
         switchOnOff.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
@@ -219,8 +221,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber125.setText(String.valueOf(progress));
-                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
-            }
+                equalizer.setBandLevel(band, (short) (progress + minEQLevel));
+}
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
@@ -236,8 +238,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber250.setText(String.valueOf(progress));
-                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
-            }
+                equalizer.setBandLevel(band, (short) (progress + minEQLevel));
+}
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
@@ -253,8 +255,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber500.setText(String.valueOf(progress));
-                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
-            }
+                equalizer.setBandLevel(band, (short) (progress + minEQLevel));
+}
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
@@ -269,8 +271,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber1k.setText(String.valueOf(progress));
-                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
-            }
+                equalizer.setBandLevel(band, (short) (progress + minEQLevel));
+}
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
@@ -285,8 +287,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber2k.setText(String.valueOf(progress));
-                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
-            }
+                equalizer.setBandLevel(band, (short) (progress + maxEQLevel));
+}
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
@@ -301,8 +303,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber4k.setText(String.valueOf(progress));
-                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
-            }
+                equalizer.setBandLevel(band, (short) (progress + minEQLevel));
+}
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
@@ -317,8 +319,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber8k.setText(String.valueOf(progress));
-                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
-            }
+                equalizer.setBandLevel(band, (short) (progress + minEQLevel));
+}
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
@@ -333,8 +335,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber16k.setText(String.valueOf(progress));
-                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
-            }
+                equalizer.setBandLevel(band, (short) (progress + minEQLevel));
+}
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {

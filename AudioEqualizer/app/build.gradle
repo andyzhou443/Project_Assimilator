@@ -8,8 +8,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.audioequalizer"
-        minSdkVersion 16
-        targetSdkVersion 30
+        minSdkVersion 23
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
 
