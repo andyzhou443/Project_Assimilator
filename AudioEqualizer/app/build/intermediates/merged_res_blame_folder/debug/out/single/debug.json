@@ -1,19 +1,7 @@
 [
     {
-        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
-    },
-    {
         "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
@@ -32,11 +20,51 @@
         "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_android.png.flat",
+        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_android.png"
+    },
+    {
+        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_android.png.flat",
+        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_android.png"
+    },
+    {
+        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_android.png.flat",
+        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_android.png"
+    },
+    {
+        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_android.png.flat",
+        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_android.png"
+    },
+    {
+        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_android.png.flat",
+        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_android.png"
+    },
+    {
         "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_activity_main.xml.flat",
         "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\src\\main\\res\\layout-v26\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_android.xml.flat",
+        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_android.xml"
+    },
+    {
+        "merged": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_android.png.flat",
+        "source": "C:\\Users\\andy\\Documents\\GitHub\\Project_Assimilator\\AudioEqualizer\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_android.png"
     }
 ]

@@ -1,6 +1,8 @@
 package com.example.audioequalizer;
 
 import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.ComponentName;
@@ -18,21 +20,42 @@ import androidx.core.app.NotificationCompat;
 
 public class AudioEqualizerService extends Service {
 
-
+    public static final String CHANNEL_ID = "Audio Equalizer Channel";
     private static final int NOTIF_ID = 1;
     private static final String NOTIF_CHANNEL_ID = "Channel_Id";
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId){
-
-        // do your jobs here
-
+        // does the work here
+/*
         startForeground();
+        Intent intent1 = new Intent (this, MainActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent1,0);
+        Notification notification = new NotificationCompat.Builder(this,"ChannelId1")
+                .setContentTitle("Audio Equalizer is On")
+                .setContentText("Audio Equalizer is On")
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setContentIntent(pendingIntent).build();
 
-        return super.onStartCommand(intent, flags, startId);
+        return START_STICKY;
+
+ */
+        Intent notifcationIntent = new Intent(this, MainActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this,0,notifcationIntent,0);
+
+        Notification notification = new NotificationCompat.Builder(this,CHANNEL_ID)
+                .setContentTitle("Audio Equalizer Service")
+                .setSmallIcon(R.drawable.ic_android)
+                .setContentIntent(pendingIntent)
+                .build();
+
+        startForeground(1,notification);
+
+        return START_NOT_STICKY;
     }
 
     private void startForeground() {
+/*
         Intent notificationIntent = new Intent(this, MainActivity.class);
 
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,
@@ -46,19 +69,33 @@ public class AudioEqualizerService extends Service {
                 .setContentText("Service is running background")
                 .setContentIntent(pendingIntent)
                 .build());
+        */
+
+        /*
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) //check if sdk channel is greater than or equal to oreo
+        {
+            NotificationChannel notificationChannel = new NotificationChannel("ChannelId1", "Audio Equalizer Notification", NotificationManager.IMPORTANCE_DEFAULT);
+                    NotificationManager manager = getSystemService(NotificationManager.class);
+                            manager.createNotificationChannel(notificationChannel);
+        }
+
+         */
     }
 
     public Context context = this;
     public Handler handler = null;
     public static Runnable runnable = null;
 
+    @Nullable
     @Override
     public IBinder onBind(Intent intent) {
         return null;
     }
 
-    @Override
-    public void onCreate() {
+
+    public void onCreate(Bundle savedInstanceState) {
+
+/*
         Toast.makeText(this, "Service created!", Toast.LENGTH_LONG).show();
 
         Intent notificationIntent = new Intent(this, MainActivity.class);
@@ -83,18 +120,25 @@ public class AudioEqualizerService extends Service {
         };
 
         handler.postDelayed(runnable, 15000);
+
+*/
     }
 
     @Override
     public void onDestroy() {
-        /* IF YOU WANT THIS SERVICE KILLED WITH THE APP THEN UNCOMMENT THE FOLLOWING LINE */
         //handler.removeCallbacks(runnable);
+        /*
+        stopForeground(true);
+        stopSelf();
         Toast.makeText(this, "Service stopped", Toast.LENGTH_LONG).show();
+         */
+        super.onDestroy();
     }
-
+/*
     @Override
     public void onStart(Intent intent, int startid) {
+        startForeground();
         Toast.makeText(this, "Service started by user.", Toast.LENGTH_LONG).show();
     }
-
+*/
 }

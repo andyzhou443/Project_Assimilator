@@ -1,11 +1,11 @@
 package com.example.audioequalizer;
-import android.app.Service;
 import android.media.audiofx.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
 import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -80,11 +80,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Intent service = new Intent(getApplicationContext(), AudioEqualizerService.class);
         this.startService(service);
 
+
+/*
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Intent intent = new Intent(this,AudioEqualizerService.class);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            startForegroundService(intent);
+        }
+        else{
+            startService(intent);
+        }
+*/
         editTextNumber63 = findViewById(R.id.editTextNumber63);
         editTextNumber125 = findViewById(R.id.editTextNumber125);
         editTextNumber250 = findViewById(R.id.editTextNumber250);
@@ -147,7 +160,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     seekBar4k.setEnabled(true);
                     seekBar8k.setEnabled(true);
                     seekBar16k.setEnabled(true);
+                    btnReset.setEnabled(true);
                     equalizer.setEnabled(true);
+
                 }
                 else{
                     seekBar63.setEnabled(false);
@@ -166,7 +181,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-
+/*
         short band = equalizer.getNumberOfBands();
 
         final short minEQLevel = equalizer.getBandLevelRange()[0];
@@ -174,7 +189,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         for (short i = 0; i < band; i++) {
             final short bands = i;
-/*
+
             TextView freqTextView = new TextView(this);
             freqTextView.setText((equalizer.getCenterFreq(band) / 1000) + " Hz");
 
@@ -193,10 +208,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     equalizer.setBandLevel(band, (short) (progress + minEQLevel));
                 }
 
-             */
+
             };
 
-
+   */
         //startService(new Intent(this, AudioEqualizerService.class));
 
         seekBar63.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -348,13 +363,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-/*
+
     public void onResetBtnClick (View view){ //reset button on the bottom
         Button btnReset = findViewById(R.id.btnReset);//initialize
         btnReset.setOnClickListener((View.OnClickListener) this);
 
     }
-*/
+
 
     //EditText editTextNumber63 = findViewById(R.id.editTextNumber63); //for 63 number input
     //editTextNumber63.getText().toString(); //get text of editText and converts to string

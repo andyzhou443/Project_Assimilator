@@ -15,7 +15,7 @@
 11-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:4:22-74
 12
 13    <application
-13-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:5:5-24:19
+13-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:5:5-25:19
 14        android:name="com.example.audioequalizer.App"
 14-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:6:9-28
 15        android:allowBackup="true"
@@ -34,28 +34,27 @@
 22        android:testOnly="true"
 23        android:theme="@style/Theme.AudioEqualizer" >
 23-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:12:9-52
-24        <service
-24-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:13:9-16:19
-25            android:name="com.example.audioequalizer.AudioEqualizerService"
-25-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:14:13-50
-26            android:label="My Service" >
-26-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:15:13-39
-27        </service>
-28
-29        <activity android:name="com.example.audioequalizer.MainActivity" >
-29-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:17:9-23:20
-29-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:17:19-47
-30            <intent-filter>
-30-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:18:13-22:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:19:17-69
-31-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:19:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:21:17-77
-33-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:21:27-74
-34            </intent-filter>
-35        </activity>
-36    </application>
-37
-38</manifest>
+24        <activity android:name="com.example.audioequalizer.MainActivity" >
+24-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:14:9-20:20
+24-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:14:19-47
+25            <intent-filter>
+25-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:15:13-19:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:16:17-69
+26-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:16:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:18:17-77
+28-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:18:27-74
+29            </intent-filter>
+30        </activity>
+31
+32        <service
+32-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:21:9-24:11
+33            android:name="com.example.audioequalizer.AudioEqualizerService"
+33-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:22:13-50
+34            android:label="My Service" />
+34-->C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:23:13-39
+35    </application>
+36
+37</manifest>

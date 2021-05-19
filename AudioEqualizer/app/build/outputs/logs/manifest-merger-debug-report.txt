@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-27:12
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\andy\.gradle\caches\transforms-2\files-2.1\b4830525609e4b8bb972f1d8a37dc780\material-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\andy\.gradle\caches\transforms-2\files-2.1\53429fbc83e528985386a3702907817d\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\andy\.gradle\caches\transforms-2\files-2.1\aee462275766ea11fd05a9119c668fe0\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -37,20 +37,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\andy\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\andy\.gradle\caches\transforms-2\files-2.1\9881669981dc1910aa81989cb9ff5831\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\andy\.gradle\caches\transforms-2\files-2.1\ab0d30d0668f894bc7284ce2e7e6c524\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\andy\.gradle\caches\transforms-2\files-2.1\a4934bcfce5a642fea31bbad1cb3e0e2\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:2:11-69
@@ -59,7 +59,7 @@ ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app
 	android:name
 		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:4:22-74
 application
-ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:5:5-24:19
+ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:5:5-25:19
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\andy\.gradle\caches\transforms-2\files-2.1\b4830525609e4b8bb972f1d8a37dc780\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\andy\.gradle\caches\transforms-2\files-2.1\b4830525609e4b8bb972f1d8a37dc780\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\andy\.gradle\caches\transforms-2\files-2.1\53429fbc83e528985386a3702907817d\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -84,26 +84,26 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\an
 		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:12:9-52
 	android:name
 		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:6:9-28
-service#com.example.audioequalizer.AudioEqualizerService
-ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:13:9-16:19
-	android:label
-		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:15:13-39
-	android:name
-		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:14:13-50
 activity#com.example.audioequalizer.MainActivity
-ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:17:9-23:20
+ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:17:19-47
+		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:14:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:18:27-74
+service#com.example.audioequalizer.AudioEqualizerService
+ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:21:9-24:11
+	android:label
+		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:23:13-39
+	android:name
+		ADDED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml:22:13-50
 uses-sdk
 INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\andy\Documents\GitHub\Project_Assimilator\AudioEqualizer\app\src\main\AndroidManifest.xml

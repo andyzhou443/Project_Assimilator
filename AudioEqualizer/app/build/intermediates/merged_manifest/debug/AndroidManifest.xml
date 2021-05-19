@@ -21,11 +21,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AudioEqualizer" >
-        <service
-            android:name="com.example.audioequalizer.AudioEqualizerService"
-            android:label="My Service" >
-        </service>
-
         <activity android:name="com.example.audioequalizer.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +28,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="com.example.audioequalizer.AudioEqualizerService"
+            android:label="My Service" />
     </application>
 
 </manifest>
