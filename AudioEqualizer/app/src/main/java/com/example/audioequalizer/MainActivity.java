@@ -1,9 +1,11 @@
 package com.example.audioequalizer;
-import 	android.media.audiofx.Equalizer;
+import android.app.Service;
+import android.media.audiofx.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,8 +13,13 @@ import android.widget.SeekBar;
 import android.view.View;
 import android.widget.Toast;
 import android.widget.Switch;
+import android.view.ViewGroup;
+import android.view.Gravity;
 import android.widget.CompoundButton;
-
+import android.widget.TextView;
+import android.content.Intent;
+import android.os.PowerManager;
+import android.content.Context;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText editTextNumber63;
@@ -24,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText editTextNumber4k;
     private EditText editTextNumber8k;
     private EditText editTextNumber16k;
+    private MediaPlayer mediaPlayer;
 
     SeekBar seekBar63;
     SeekBar seekBar125;
@@ -35,13 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     SeekBar seekBar8k;
     SeekBar seekBar16k;
 
-    //test
-    float start=0;
-    float end=100;
-    float start_pos=0;
-    int start_position=0;
-
-
+    //previously used for starting service
+    //startService(new Intent(this, AudioEqualizerService.class));
 
     public void onClick(View v) {
         switch (v.getId()) {
@@ -63,8 +66,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    public void startService (View V){ //foreground service
+    public void startService (View v){ //foreground service
+        Intent serviceIntent = new Intent (this, AudioEqualizerService.class);
+        startService(serviceIntent);
+    }
 
+    public void stopService (View v){
+        Intent serviceIntent = new Intent (this, AudioEqualizerService.class);
+        startService(serviceIntent);
     }
 
 
@@ -73,6 +82,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent service = new Intent(getApplicationContext(), AudioEqualizerService.class);
+        this.startService(service);
 
         editTextNumber63 = findViewById(R.id.editTextNumber63);
         editTextNumber125 = findViewById(R.id.editTextNumber125);
@@ -104,6 +115,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         seekBar16k = (SeekBar)findViewById(R.id.seekBar16k);
         Switch switchOnOff = (Switch)findViewById(R.id.switchOnOff);
         switchOnOff.setChecked(!switchOnOff.isSelected());
+
+        //initialize the media player
+        mediaPlayer = new MediaPlayer();
+        //mediaPlayer.setOnCompletionListener(this);
+        mediaPlayer.setWakeMode(this, PowerManager.PARTIAL_WAKE_LOCK);// power saving
+
+        Equalizer equalizer = new Equalizer(0, mediaPlayer.getAudioSessionId());
 
         Button btnReset = findViewById(R.id.btnReset);//initialize
         btnReset.setOnClickListener(this); // used for the toast message
@@ -149,10 +167,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
 
+        short band = equalizer.getNumberOfBands();
+
+        final short minEQLevel = equalizer.getBandLevelRange()[0];
+        final short maxEQLevel = equalizer.getBandLevelRange()[1];
+
+        for (short i = 0; i < band; i++) {
+            final short bands = i;
+/*
+            TextView freqTextView = new TextView(this);
+            freqTextView.setText((equalizer.getCenterFreq(band) / 1000) + " Hz");
+
+            TextView minDbTextView = new TextView(this);
+            minDbTextView.setText((minEQLevel / 100) + " dB");
+
+            TextView maxDbTextView = new TextView(this);
+            maxDbTextView.setText((maxEQLevel / 100) + " dB");
+
+            SeekBar bar = new SeekBar(this);
+
+            bar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+                public void onProgressChanged(SeekBar seekBar, int progress,
+                                              boolean fromUser) {
+                    equalizer.setBandLevel(band, (short) (progress + minEQLevel));
+                }
+
+             */
+            };
+
+
+        //startService(new Intent(this, AudioEqualizerService.class));
+
         seekBar63.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber63.setText(String.valueOf(progress));
+                //equalizer.setBandLevel(band, (short) (progress/100 + minEQLevel));
             }
 
             @Override
@@ -168,6 +219,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber125.setText(String.valueOf(progress));
+                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
             }
 
             @Override
@@ -184,6 +236,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber250.setText(String.valueOf(progress));
+                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
             }
 
             @Override
@@ -200,6 +253,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber500.setText(String.valueOf(progress));
+                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
             }
 
             @Override
@@ -215,6 +269,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber1k.setText(String.valueOf(progress));
+                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
             }
 
             @Override
@@ -230,6 +285,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber2k.setText(String.valueOf(progress));
+                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
             }
 
             @Override
@@ -245,6 +301,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber4k.setText(String.valueOf(progress));
+                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
             }
 
             @Override
@@ -260,6 +317,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber8k.setText(String.valueOf(progress));
+                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
             }
 
             @Override
@@ -275,6 +333,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 editTextNumber16k.setText(String.valueOf(progress));
+                //equalizer.setBandLevel(band, (short) (progress + minEQLevel));
             }
 
             @Override

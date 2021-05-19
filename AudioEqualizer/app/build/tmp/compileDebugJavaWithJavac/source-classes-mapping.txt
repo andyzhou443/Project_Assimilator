@@ -1,5 +1,10 @@
 com/example/audioequalizer/BuildConfig.java
  com.example.audioequalizer.BuildConfig
+com/example/audioequalizer/App.java
+ com.example.audioequalizer.App
+com/example/audioequalizer/AudioEqualizerService.java
+ com.example.audioequalizer.AudioEqualizerService
+ com.example.audioequalizer.AudioEqualizerService$1
 com/example/audioequalizer/MainActivity.java
  com.example.audioequalizer.MainActivity
  com.example.audioequalizer.MainActivity$1
@@ -12,5 +17,3 @@ com/example/audioequalizer/MainActivity.java
  com.example.audioequalizer.MainActivity$7
  com.example.audioequalizer.MainActivity$8
  com.example.audioequalizer.MainActivity$9
-com/example/audioequalizer/App.java
- com.example.audioequalizer.App
